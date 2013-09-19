@@ -1,0 +1,23 @@
+extends layout
+
+block content
+
+  script(type='text/x-handlebars', id='application')
+    include templates/application.hbs
+
+  script(type='text/x-handlebars', id='about')
+    include templates/about.hbs
+
+  script(type='text/x-handlebars', id='contact')
+    include templates/contact.hbs
+
+  script(type='text/x-handlebars', id='contact/index')
+    include templates/contact.index.hbs
+
+  script(type='text/x-handlebars', id='contact/form')
+    include templates/contact.form.hbs
+
+  script(type='text/x-handlebars', id='components/contact-form')
+    include templates/components/contact-form.hbs
+
+  != js('main')
